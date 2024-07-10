@@ -8,7 +8,6 @@ const PORT = process.env.PORT || 4300;
 app.use(bodyParser.json());
 app.use("/email", emailRouter);
 
-
 app.listen(PORT, () => {
   console.log(`Sever started at http://localhost:${PORT}`);
 });

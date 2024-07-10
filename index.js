@@ -10,5 +10,5 @@ app.use("/email", emailRouter);
 
 const PORT = process.env.PORT || 4300;
 app.listen(PORT, () => {
-  console.log(`Sever started at http://localhost${PORT}`);
+  console.log(`Sever started at http://localhost:${PORT}`);
 });

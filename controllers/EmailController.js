@@ -1,5 +1,9 @@
 const nodemailer = require("nodemailer");
+const Bull = require("bull")
 
+const emailQueue = new Bull("email", {
+  redis : "localhost:6379",
+})
 const sendEmail = async (req, res) => {
   const { from, to, subject, text } = req.body;
 

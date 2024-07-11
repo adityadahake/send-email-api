@@ -88,7 +88,7 @@ REDIS_URL=redis://localhost:6379
  
 3. **Start Redis server:**
  
-Ensure you have Redis installed and running. If not, you can install it from [here](https://redis.io/download) and start the server:
+    Ensure you have Redis installed and running. If not, you can install it from [here](https://redis.io/download) and start the server:
  
 ```sh
 redis-server

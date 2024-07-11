@@ -4,7 +4,7 @@
  
 Send Email API is an efficient implementation of a message queue system designed to facilitate rapid email transfer. It is up to 100 times faster than conventional methods, capable of sending emails in approximately 20 milliseconds.
 
-<p align="center"><img src= "./assests/Email API project.png" alt="Work Flow Diagram" width = 550px height = 300px vspace=20px>
+<p align="center"><img src= "./assets/WorkFlow.png" alt="Work Flow Diagram" width = 550px height = 300px vspace=30px>
 <br> 
     Work Flow Diagram
 </p>
@@ -28,7 +28,12 @@ Send Email API is an efficient implementation of a message queue system designed
 ## Project Structure
  
 ```
-project/
+SEND-Email-API/
+│
+├── assets/
+│   └── EmailForm.png
+│   └── LandingPage.png
+│   └── WorkFlow.png
 │
 ├── controllers/
 │   └── EmailController.js
@@ -36,8 +41,15 @@ project/
 ├── models/
 │   └── EmailModel.js
 │
+├── public/
+│   └── styles.css
+│
 ├── routes/
 │   └── EmailRoutes.js
+│
+├── views
+│   └── EmailForm.ejs
+│   └── LandingPage.ejs
 │
 └── index.js
 ```
@@ -96,11 +108,19 @@ Open your browser and navigate to `http://localhost:4300/`.
 1. **Landing Page:**
    - Visit the landing page at `http://localhost:4300/`.
    - Click the "Send an Email" button to go to the email form.
+   <p align="center"><img src= "./assets/LandingPage.png" alt="Landing page" width = 550px height = 300px vspace=30px>
+    <br> 
+    Landing Page
+    </p>
  
 2. **Email Form:**
    - Fill in the sender's email, recipient's email, subject, and message.
    - Click "Send Email" to submit the form.
    - An alert will notify you of the email's status, and the form will reset upon successful submission.
+   <p align="center"><img src= "./assets/EmailForm.png" alt="Email Form" width = 550px height = 300px vspace=30px>
+    <br> 
+    Email Form
+    </p>
 
 3. **Send Email:**
     - **URL:** `/email/send`
@@ -139,5 +159,4 @@ We welcome contributions to improve the Email Sender Application. If you have an
 - Special thanks to the open-source community for continuous support and contributions.
  
 ---
-Contribute to [adityadahake/send-email-api](https://github.com/adityadahake/send-email-api) development by creating an account on GitHub.
  

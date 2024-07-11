@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Email Sender</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="landing-container">
+        <header>
+            <h1>Welcome to Email Sender</h1>
+            <p>Send emails quickly and easily!</p>
+        </header>
+        <main>
+            <button id="sendEmailButton">Send an Email</button>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById('sendEmailButton').addEventListener('click', function() {
+            window.location.href = '/email';
+        });
+    </script>
+</body>
+</html>

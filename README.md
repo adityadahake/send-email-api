@@ -45,7 +45,7 @@ SEND-Email-API/
 │   └── styles.css
 │
 ├── routes/
-│   └── EmailRoutes.js
+│   └── Email.js
 │   └── Landing.js
 │
 ├── views

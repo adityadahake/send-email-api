@@ -11,6 +11,13 @@ const sendNewEmail = async (email) => {
 };
 
 const post = async (req, res) => {
+  // Check if redis is available
+  if (emailQueue.client.status !== "ready") {
+    res.status(500).json({
+      message: "Server error",
+    });
+  }
+
   const { from, to, subject, text } = req.body;
   await sendNewEmail({ from, to, subject, text });
 

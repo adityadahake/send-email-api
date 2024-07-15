@@ -1,10 +1,5 @@
-const Bull = require("bull");
 const nodemailer = require("nodemailer");
-
-const emailQueue = new Bull("email", {
-  // use your redis connection URL
-  redis: "redis://127.0.0.1:6379",
-});
+const {emailQueue} = require("./controllers/EmailController.js")
 
 const processEmailQueue = async (job) => {
   // Use a test account as this is a tutorial

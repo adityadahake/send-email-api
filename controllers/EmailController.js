@@ -66,4 +66,5 @@ const send_without_queue = async (req, res) => {
 module.exports = {
   post,
   send_without_queue,
+  emailQueue
 };

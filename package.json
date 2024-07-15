@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
+    "start-sender": "nodemon index.js",
+    "start-processor": "nodemon index-processor.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

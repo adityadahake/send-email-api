@@ -16,6 +16,8 @@ const post = async (req, res) => {
     res.status(500).json({
       message: "Server error",
     });
+    console.log("server error thrown");
+    return;
   }
 
   const { from, to, subject, text } = req.body;
@@ -66,5 +68,5 @@ const send_without_queue = async (req, res) => {
 module.exports = {
   post,
   send_without_queue,
-  emailQueue
+  emailQueue,
 };
